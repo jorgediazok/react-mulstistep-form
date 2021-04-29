@@ -1,6 +1,3 @@
-$base-color: #e67e22;
-$blue-color: #22ac11;
-
 * {
   margin: 0;
   padding: 0;
@@ -9,7 +6,7 @@ $blue-color: #22ac11;
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: $base-color;
+  color: #e67e22;
 }
 
 .form-control:focus {
@@ -35,44 +32,38 @@ h1 {
   justify-content: center;
   letter-spacing: 1px;
   margin-top: 2rem;
+}
 
-  .step {
-    margin: 0.5rem 3rem;
-    display: flex;
-    color: #ccc;
+.steps .step {
+  margin: 0.5rem 3rem;
+  display: flex;
+  color: #ccc;
+}
 
-    a {
-      color: $base-color;
-    }
+.steps .step a {
+  color: #e67e22;
+}
 
-    div:first-of-type {
-      border: 1px solid #ccc;
-      padding: 5px;
-      border-radius: 50%;
-      margin-right: 0.5rem;
-      width: 2rem;
-      height: 2rem;
-      text-align: center;
-      line-height: 100%;
-      padding-top: 7%;
-    }
+.steps .step div:first-of-type {
+  border: 1px solid #ccc;
+  padding: 5px;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+  width: 2rem;
+  height: 2rem;
+  text-align: center;
+  line-height: 100%;
+  padding-top: 7%;
+}
 
-    :last-child {
-      margin-top: 3%;
-    }
+.steps .step:active div:first-of-type {
+  background-color: #e67e22;
+  border: 1px solid transparent;
+  color: #fff;
+}
 
-    &.active {
-      div:first-of-type {
-        background-color: $base-color;
-        border: 1px solid transparent;
-        color: #fff;
-      }
-
-      div:last-of-type {
-        color: $base-color;
-      }
-    }
-  }
+.steps .step:active div:last-of-type {
+  color: #e67e22;
 }
 
 .input-form {
@@ -94,7 +85,7 @@ h1 {
 }
 
 .successMsg {
-  color: $blue-color;
+  color: #22ac11;
 }
 
 .loading {
@@ -106,7 +97,7 @@ h1 {
 }
 
 .user-details {
-  color: $blue-color;
+  color: #22ac11;
   padding: 5px 0;
   margin-bottom: 1rem;
 }
@@ -131,10 +122,10 @@ h1 {
   .steps .step {
     margin: 0.5rem 1rem;
     font-size: 0.9rem;
+  }
 
-    div:first-of-type {
-      padding-top: 9%;
-    }
+  .steps .step div:first-of-type {
+    padding-top: 9%;
   }
 }
 
@@ -142,9 +133,9 @@ h1 {
   .steps {
     flex-direction: column;
     align-items: center;
+  }
 
-    .step {
-      align-items: center;
-    }
+  .steps .step {
+    align-items: center;
   }
 }
