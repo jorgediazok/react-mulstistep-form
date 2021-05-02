@@ -82,7 +82,7 @@ const ThirdStep = (props) => {
     };
 
     getCities();
-  }, [selectedState]);
+  }, [selectedState, selectedCountry]);
 
   const handleSubmit = async (event) => {
     event.preventDefault();
@@ -146,6 +146,9 @@ const ThirdStep = (props) => {
             )}
           </Form.Control>
         </Form.Group>
+        <Button variant="primary" type="submit">
+          Register
+        </Button>
       </div>
     </Form>
   );
