@@ -2,6 +2,8 @@ import React from 'react';
 import { useForm } from 'react-hook-form';
 import { Form, Button } from 'react-bootstrap';
 
+//This is the second setp
+
 const SecondStep = (props) => {
   const { register, handleSubmit, errors } = useForm();
 

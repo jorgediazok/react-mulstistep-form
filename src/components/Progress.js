@@ -2,6 +2,8 @@ import React from 'react';
 import { withRouter } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 
+//This is the progress bar
+
 const Progress = ({ location: { pathname } }) => {
   const isFirstStep = pathname === '/';
   const isSecondStep = pathname === '/second';
